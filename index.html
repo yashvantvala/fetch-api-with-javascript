@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Javascript Fetch APi</title>
+	<style type="text/css">
+		#myDiv{
+			float: left;
+			margin: 80px 80px;
+		}
+		#list{
+			float: right;
+			width: auto;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: center;
+			box-sizing: border-box;
+			margin-right: 500px;
+		}
+		ul {
+  			list-style: none;
+ 	 		padding: 0;
+
+
+		}
+		li{
+			padding: 5px 10px;
+			width: 300px;
+			background-color: #fff;
+			border:1px solid;
+
+			color: black;
+		}
+		input{
+			width:15rem;
+			margin: 10px 0;
+			padding: 5px 10px;
+			border-radius: 15px;
+			border-color: red;
+		}
+		button{
+			border-color: green;
+			
+			padding: 10px;
+			margin: 4px 2px;
+			cursor: pointer;
+			width: 5rem;
+			border-radius: 5px;
+			font-weight: bold;
+		}
+		button:hover{
+			width: 6rem;
+			transition: 0.4s ease-in-out;
+			background-color: green;
+			color: #fff;
+		}
+		@media (max-width: 600px) {
+			input{
+				width: 140%;
+				display: block;
+				margin-bottom:20px;
+			}
+			#myDiv{
+				margin-bottom: 10px;
+			}
+			#list{
+				margin:30px 30px;
+				
+
+			}
+		}
+	</style>
+</head>
+<body>
+	<div id="myDiv">
+		<div>
+			<input type="text"  id="name" placeholder="enter name...">
+		</div>
+		<div>
+			<input type="text" id="email" placeholder="enter email..">
+		</div>
+		<div>
+			<button id="submit"> Submit </button>
+		</div>
+	</div>
+	<div>
+	<div id="list">
+		
+	</div>
+	</div>
+	<script type="text/javascript" src="api.js"></script>
+</body>
+</html>
